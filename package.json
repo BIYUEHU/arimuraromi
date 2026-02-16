@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "build": "gleam build",
+    "watch": "npx nodemon --ext gleam --exec \"npm run build\"",
+    "serve": "npx vite"
+  }
+}

@@ -1,7 +1,8 @@
 {
+  "name": "arimuraromi",
   "scripts": {
-    "build": "gleam build",
-    "watch": "npx nodemon --ext gleam --exec \"npm run build\"",
-    "serve": "npx vite"
+    "serve": "npx vite",
+    "build": "gleam build && npx vite build",
+    "watch": "npx nodemon --ext gleam --exec \"gleam build\""
   }
 }

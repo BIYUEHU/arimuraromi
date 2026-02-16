@@ -6,37 +6,36 @@ body {
   font-family: system-ui;
   font-size: 1.125rem;
   line-height: 1.5;
+  color: #eee;
+}
+
+.bg {
+  background-image: url("https://files.superbed.cc/store/images/2024/0906/40/66da6e98d9c307b7e9bbb840.jpg");
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.titles {
+  line-height: 0.5;
 }
 
 .main {
-  width: min(70ch, 100% - 4rem);
+  width: min(65ch, 100% - 4rem);
   margin-inline: auto;
 }
 
-img,
-svg,
-video {
-  max-width: 100%;
-  display: block;
-}
-
-.f-warning {
-  color: orange;
-}
-
-.f-error {
-  color: red;
-}
-
-.f-info {
-  color: rgb(5, 160, 199);
-}
-
 .f-romi {
-  color: #FFAFF3
+  color: #e5a3ff
 }
 
 a {
-  color: deepskyblue;
+  color: #FFAFF3;
   text-decoration: none;
 }

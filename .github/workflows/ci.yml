@@ -3,7 +3,7 @@ name: Test & Build & Deploy
 on:
   push:
   pull_request:
-  workflow_run:
+  workflow_dispatch:
 
 permissions:
   contents: write

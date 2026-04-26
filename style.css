@@ -6,11 +6,11 @@ body {
   font-family: system-ui;
   font-size: 1.125rem;
   line-height: 1.5;
-  color: #eee;
+  /* color: #eee; */
 }
 
 .bg {
-  background-image: url("https://files.superbed.cc/store/images/2024/0906/40/66da6e98d9c307b7e9bbb840.jpg");
+  background-image: url("https://img0.huoshen80.top/i/2025/03/01/67c313944f8b9.png");
   width: 100vw;
   height: 100vh;
   position: fixed;

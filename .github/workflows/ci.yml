@@ -2,10 +2,11 @@ name: Test & Build & Deploy
 
 on:
   push:
-    branches:
-      - master
-      - main
   pull_request:
+  workflow_run:
+
+permissions:
+  contents: write
 
 jobs:
   test:
@@ -18,10 +19,13 @@ jobs:
           gleam-version: "1.14.0"
           rebar3-version: "3"
           # elixir-version: "1"
+      - uses: oven-sh/setup-bun@v2
+          
       - run: gleam deps download
       - run: gleam test
       - run: gleam format --check src test
-      - run: npm run build
+      - run: bun run build
+
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: page

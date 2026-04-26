@@ -1,4 +1,4 @@
-name: test
+name: Test & Build & Deploy
 
 on:
   push:
@@ -21,3 +21,11 @@ jobs:
       - run: gleam deps download
       - run: gleam test
       - run: gleam format --check src test
+      - run: npm run build
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: page
+          build_dir: dist
+          fqdn: https://arimuraromi.com
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
